@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>styles.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+styles.css</font>
+</center></td></tr></table>
+<pre><span class="s0">* {</span>
+    <span class="s0">margin: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">padding: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">box-sizing: border-box;</span>
+<span class="s0">}</span>
+
+<span class="s0">body {</span>
+    <span class="s0">font-family: </span><span class="s2">'Arial'</span><span class="s0">, sans-serif;</span>
+    <span class="s0">background-color: #</span><span class="s1">1</span><span class="s0">a1a1a;</span>
+    <span class="s0">display: flex;</span>
+    <span class="s0">justify-content: center;</span>
+    <span class="s0">align-items: center;</span>
+    <span class="s0">height: </span><span class="s1">100</span><span class="s0">vh;</span>
+    <span class="s0">overflow: hidden;</span>
+    <span class="s0">margin: </span><span class="s1">0</span><span class="s0">;</span>
+<span class="s0">}</span>
+
+<span class="s0">.container {</span>
+    <span class="s0">position: relative;</span>
+    <span class="s0">text-align: center;</span>
+<span class="s0">}</span>
+
+<span class="s0">.main-picture {</span>
+    <span class="s0">margin-bottom: </span><span class="s1">40</span><span class="s0">px;</span>
+<span class="s0">}</span>
+
+<span class="s0">.main-picture img {</span>
+    <span class="s0">width: </span><span class="s1">300</span><span class="s0">px;</span>
+    <span class="s0">height: </span><span class="s1">300</span><span class="s0">px;</span>
+    <span class="s0">border-radius: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">box-shadow: </span><span class="s1">0 4</span><span class="s0">px </span><span class="s1">8</span><span class="s0">px rgba(</span><span class="s1">0</span><span class="s0">, </span><span class="s1">0</span><span class="s0">, </span><span class="s1">0</span><span class="s0">, </span><span class="s1">0.3</span><span class="s0">);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web {</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">top: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">left: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">transform: translate(-</span><span class="s1">50</span><span class="s0">%, -</span><span class="s1">50</span><span class="s0">%);</span>
+    <span class="s0">display: flex;</span>
+    <span class="s0">flex-wrap: wrap;</span>
+    <span class="s0">justify-content: center;</span>
+    <span class="s0">gap: </span><span class="s1">60</span><span class="s0">px;</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item {</span>
+    <span class="s0">width: </span><span class="s1">150</span><span class="s0">px;</span>
+    <span class="s0">height: </span><span class="s1">150</span><span class="s0">px;</span>
+    <span class="s0">object-fit: cover;</span>
+    <span class="s0">border-radius: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">transition: transform </span><span class="s1">0</span><span class="s0">.</span><span class="s1">3</span><span class="s0">s ease, box-shadow </span><span class="s1">0</span><span class="s0">.</span><span class="s1">3</span><span class="s0">s ease;</span>
+    <span class="s0">cursor: pointer;</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:hover {</span>
+    <span class="s0">transform: scale(</span><span class="s1">1.15</span><span class="s0">);</span>
+    <span class="s0">box-shadow: </span><span class="s1">0 0 20</span><span class="s0">px rgba(</span><span class="s1">255</span><span class="s0">, </span><span class="s1">255</span><span class="s0">, </span><span class="s1">255</span><span class="s0">, </span><span class="s1">0.5</span><span class="s0">);</span>
+<span class="s0">}</span>
+
+<span class="s3">/* Spider's Web Layout (circular positioning) */</span>
+<span class="s0">.web-item:nth-child(</span><span class="s1">1</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">0</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(</span><span class="s1">0</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">2</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">45</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">45</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">3</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">90</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">90</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">4</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">135</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">135</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">5</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">180</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">180</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">6</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">225</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">225</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">7</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">270</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">270</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">8</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">9</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">10</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">11</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">12</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">13</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">14</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">15</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">16</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">17</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">18</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">19</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">20</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">21</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+<span class="s0">.web-item:nth-child(</span><span class="s1">22</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">23</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">24</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">25</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">26</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.web-item:nth-child(</span><span class="s1">27</span><span class="s0">) {</span>
+    <span class="s0">transform: rotate(</span><span class="s1">315</span><span class="s0">deg) translateX(</span><span class="s1">250</span><span class="s0">px) rotate(-</span><span class="s1">315</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+
+
+
+</pre>
+</body>
+</html>
